@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NuestrosDjs from "../components/NuestrosDjs.astro";
+import Header from "../components/Header.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Eventos from "../components/Eventos.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="px-4">
+    <SectionContainer id="nosotros" class="py-8 md:py-16">
+      <Header />
+    </SectionContainer>
+  </main>
+  <div>
+    <SectionContainer id="djs">
+      <NuestrosDjs />
+    </SectionContainer>
+    <SectionContainer id="eventos">
+      <Eventos />
+    </SectionContainer>
+  </div>
+</Layout>

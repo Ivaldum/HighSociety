@@ -1,0 +1,41 @@
+---
+import EventosCard from "./EventosCard.astro";
+---
+
+<section class="flex flex-col flex-wrap items-center justify-center">
+  <h2 class="text-4xl font-bold text-center text-white">Eventos</h2>
+  <p class="max-w-xl text-xl text-sky-200 text-center [text-wrap:balance] mt-4">
+    Nos caracterizamos por realizar eventos unicos
+  </p>
+  <div
+    class="grid grid-cols-1 my-8 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 sm:px-2 px-8"
+  >
+    <EventosCard
+      title="SUMMER CLUB 🌴"
+      description=`
+        Más conocido como "El Club del Verano"☀️ .
+        Una serie de fiestas %100 al aire libre . Esas que tanto te gustan a vos, en realidad, a TODOS🥰 .
+        🏖️El verano es al aire libre, y con High🕶️.
+        `
+      instagram="https://www.instagram.com/summer.club____/"
+      image="summerclub.jpg"
+    />
+    <EventosCard
+      title="LA FINCA 🏛️"
+      description=`
+      Es un paraíso que abre sus puertas en ocasiones especiales, FINDES XXL, por lo general .
+      Un lugar totalmente misterioso, donde tanto los organizadores como los que concurren a los eventos firman un pacto de silencio, donde lo ocurrido en la noche no se vuelve a repetir ni contar 🤫.`
+      instagram="https://www.instagram.com/lafinca_____/"
+      image="lafinca.jpg"
+    />
+    <EventosCard
+      title="YOUNG 🦄"
+      description=`
+      Es un espacio donde todas las promos y sus invitados van a poder disfrutar una noche a lo High ; a su manera, a su gusto, como ellos kieran vamos a decirle.
+      El fin de las estudiantinas es colaborar con la PROMO25 a recaudar fondos
+      para el Baile de Recepción 2024💘.`
+      instagram="https://www.instagram.com/young.season_/"
+      image="young.jpg"
+    />
+  </div>
+</section>

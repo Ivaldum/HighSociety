@@ -1,0 +1,52 @@
+---
+import DjsCard from "./DjsCard.astro";
+---
+
+<section class="flex flex-col flex-wrap items-center justify-center">
+  <h2 class="text-4xl font-bold text-center text-white">Nuestros Djs</h2>
+  <p class="max-w-xl text-xl text-sky-200 text-center [text-wrap:balance] mt-4">
+    Los encargados de hacerte pasar una noche mágica ✨
+  </p>
+  <div
+    class="grid grid-cols-2 my-8 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-8"
+  >
+    <DjsCard
+      name="Gonza Paltenghi"
+      location="Rosario del tala"
+      instagram="https://www.instagram.com/GonzaPaltenghi"
+      image="GonzaPaltenghi.png"
+    />
+    <DjsCard
+      name="Rodrigo Veit"
+      location="Macia"
+      instagram="https://www.instagram.com/rodrigo_veit"
+      image="RodrigoVeit.png"
+    />
+    <DjsCard
+      name="Copy Legaria"
+      location="Urdinarrain"
+      instagram="https://www.instagram.com/copylegaria"
+      image="CopyLegaria.png"
+    />
+    <DjsCard
+      name="Mateo Bosc"
+      location="Macia"
+      instagram="https://www.instagram.com/mateobosc__"
+      image="MateoBosc.png"
+    />
+    <DjsCard
+      name="Joaquin Castillo"
+      location="Basavilbaso"
+      instagram="https://www.instagram.com/joaquiincastillo"
+      image="JoaquinCastillo.png"
+    />
+    <DjsCard
+      name="Paolo Maffei"
+      location="Concepcion del Uruguay"
+      instagram="https://www.instagram.com/paolomaffei_"
+      image="PaoloMaffei.png"
+    />
+    <DjsCard name="🔒" location="Secret Location" instagram="" image="" />
+    <DjsCard name="🔒" location="Secret Location" instagram="" image="" />
+  </div>
+</section>

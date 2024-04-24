@@ -1,0 +1,32 @@
+---
+interface Props {
+  name: string;
+  location: string;
+  instagram: string;
+  image: string;
+}
+
+const { name, location, instagram, image } = Astro.props;
+---
+
+<article
+  class="relative flex flex-col items-center justify-center w-full p-[1px] transition-all rounded-md bg-gradient-to-b from-white/10 via-transparent to-transparent hover:via-white/10 group"
+>
+  <div
+    class="bg-[#000214]/50 flex-1 group-hover:bg-[#000214]/10 w-full px-4 py-8 rounded transition"
+  >
+    <figure class="flex items-center justify-center">
+      <img
+        class="object-cover w-40 h-40 transition bg-white rounded-full group-hover:scale-110"
+        src={image}
+        alt=`DJ ${name}`
+      />
+    </figure>
+    <h3 class="mt-4 text-xl font-bold text-center text-white">
+      <a href={instagram} target="_blank" rel="external noopener nofollow"
+        >{name}</a
+      >
+    </h3>
+    <p class="text-l text-center text-fucsia">{location}</p>
+  </div>
+</article>
