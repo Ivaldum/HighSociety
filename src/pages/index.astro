@@ -4,9 +4,10 @@ import NuestrosDjs from "../components/NuestrosDjs.astro";
 import Header from "../components/Header.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Eventos from "../components/Eventos.astro";
+import SectionSpoty from "../components/SectionSpoty.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="High Society">
   <main class="px-4">
     <SectionContainer id="nosotros" class="py-8 md:py-16">
       <Header />
@@ -18,6 +19,9 @@ import Eventos from "../components/Eventos.astro";
     </SectionContainer>
     <SectionContainer id="eventos">
       <Eventos />
+    </SectionContainer>
+    <SectionContainer id="spotify">
+      <SectionSpoty />
     </SectionContainer>
   </div>
 </Layout>
