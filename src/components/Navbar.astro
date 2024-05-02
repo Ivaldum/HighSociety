@@ -30,24 +30,30 @@ const navItems = [
 ];
 ---
 
-<header
-  class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
->
+<header class="fixed top-0 z-10 flex justify-center items-center w-full mt-4">
   <nav
-    class="flex px-3 text-xs md:text-xl font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
+    class="flex flex-row px-3 text-xs md:text-xl font-medium rounded-full text-gray-200 items-center"
   >
-    {
-      navItems.map((link) => (
-        <a
-          class="relative block px-2 py-2 transition hover:text-fucsia dark:hover:text-fucsia"
-          aria-label={link.label}
-          href={link.url}
-        >
-          {link.title}
-        </a>
-      ))
-    }
-    <ThemeToggle />
+    <a href="https://www.instagram.com/highsociety.ar/">
+      <img
+        src="HS-blanco.png"
+        alt="logo high"
+        class="sm:h-12 h-6 sm:pr-12 pr-0"
+      />
+    </a>
+    <div class="flex flex-row">
+      {
+        navItems.map((link) => (
+          <a
+            class="relative block px-2 py-2 transition hover:text-fucsia "
+            aria-label={link.label}
+            href={link.url}
+          >
+            {link.title}
+          </a>
+        ))
+      }
+    </div>
   </nav>
 </header>
 
