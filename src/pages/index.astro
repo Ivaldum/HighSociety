@@ -5,6 +5,7 @@ import Header from "../components/Header.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Eventos from "../components/Eventos.astro";
 import SectionSpoty from "../components/SectionSpoty.astro";
+import NextEvent from "../components/NextEvent.astro"
 ---
 
 <Layout title="High Society">
@@ -14,6 +15,9 @@ import SectionSpoty from "../components/SectionSpoty.astro";
     </SectionContainer>
   </main>
   <div>
+    <SectionContainer id="djs">
+      <NextEvent title="Flow 2000" description="Fiesta tematica años 2000" imageAlt="imagen flow 2000" imageSrc="flow2000.jpg" button1Link="http://www.instagram.com/highsociety.ar" button2Link="https://www.passline.com/eventos?q=high+society&region=&mes=&pais=argentina&page=1"/>
+    </SectionContainer>
     <SectionContainer id="djs">
       <NuestrosDjs />
     </SectionContainer>
